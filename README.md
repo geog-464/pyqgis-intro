@@ -2,14 +2,14 @@
 
 Both ESRI products (ArcMap, ArcGIS Pro) and QGIS accommodate out-of-the-box python console interfaces for creating, loading and running scripts. Individual Python scripts can also be added as tools inside graphical modelers.
 
-As you will see below, in software suites which require specific packages to interface with programmatically (i.e. the qgis.core module in QGIS), it's more about knowing the package than about necessarily just knowing Python. Knowing Python, however, will allow you to more or less infinitely extend and customize functionality beyond the available functions of any specific package. QGIS doesn't only allow you to create processing scripts: it also allows you to programmatically modify the user interface (e.g. dynamically hiding or displaying specific elements of the UI), user interactivity (via click [Actions](https://docs.qgis.org/3.22/en/docs/training_manual/create_vector_data/actions.html)), and map styles (via QGIS-specific [Expressions](https://docs.qgis.org/3.22/en/docs/user_manual/expressions/expression.html)). All QGIS objects and methods are found in the [official reference documentation](https://qgis.org/pyqgis/master/) (within which you could orient yourself using the [PyQGIS Cookbook](https://docs.qgis.org/3.22/en/docs/pyqgis_developer_cookbook/index.html) or additional open courseware linked to at the end of this lab for even more guidance).
+As you will see below, in software suites which require specific packages to interface with programmatically (i.e. the qgis.core module in QGIS), it's more about knowing the package than about necessarily just knowing Python. Knowing Python, however, will allow you to more or less infinitely extend and customize functionality beyond the available functions of any specific package. QGIS doesn't only allow you to create processing scripts: it also allows you to programmatically modify the user interface (e.g. dynamically hiding or displaying specific elements of the UI), user interactivity (via click [Actions](https://docs.qgis.org/3.22/en/docs/training_manual/create_vector_data/actions.html)), and map styles (via QGIS-specific [Expressions](https://docs.qgis.org/3.22/en/docs/user_manual/expressions/expression.html)). All QGIS objects and methods are found in the [official reference documentation](https://qgis.org/pyqgis/master/) (within which you could orient yourself using the [PyQGIS Cookbook](https://docs.qgis.org/3.22/en/docs/pyqgis_developer_cookbook/index.html) or additional open courseware linked to at the end of this tutorial).
 
 ## Importing data
 
 Go to the Montreal Open Data portal and download the [réseau routier](https://donnees.montreal.ca/ville-de-montreal/geobase#resource-g%C3%A3%C2%A9obase). Whether you download a .shp or .geojson is up to you. If the latter, however, make sure to save as a .geojson and make sure to project it in MTM 8 before continuing.
 - Launch QGIS and open the Plugins > Python Console.
 - Click the Show Editor icon.
-- Click the New Editor icon (+ button) and save it in your workspace as import_vector.py.
+- Click the New Editor icon (+ button) and save it in your workspace as *import_vector.py*.
 The simplest way to import a vector file into QGIS programmatically would be to enter the following:
 ```python
 importPath = "PATH_TO_FILE\\FILENAME.shp"
