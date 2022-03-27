@@ -16,7 +16,7 @@ importPath = "PATH_TO_FILE\\FILENAME.shp"
 iface.addVectorLayer(importPath,'LAYERNAME','ogr')
 ```
 - Paste the above code and replace the PATH_TO_FILE and FILENAME appropriately. Replace LAYERNAME with a name of your choice to appear in your TOC. then run the script
-  - Note that if on Windows, you will need to escape each backslash, i.e. use two (\\\\) instead of one wherever a slash appears in your PATH_TO_FILE.
+  - Note that if on Windows, you will need to escape each backslash as seen in the example above (i.e. use two \\\\ instead of one wherever a slash appears in your PATH_TO_FILE).
   - If on Mac or Linux, a single forward slash (/) should suffice as a directory separator.
 
 If this worked, great! But this isn't a portable script (i.e. it would be better if we didn't have to use absolute paths and use relative ones instead!).
