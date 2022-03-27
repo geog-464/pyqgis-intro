@@ -13,9 +13,9 @@ Go to the Montreal Open Data portal and download the [réseau routier](https://d
 The simplest way to import a vector file into QGIS programmatically would be to enter the following:
 ```python
 importPath = "PATH_TO_FILE\\FILENAME.shp"
-iface.addVectorLayer(importPath,'myLayer','ogr')
+iface.addVectorLayer(importPath,'LAYERNAME','ogr')
 ```
-- Paste the above code and replace the PATH_TO_FILE and FILENAME appropriately, then run the script
+- Paste the above code and replace the PATH_TO_FILE and FILENAME appropriately. Replace LAYERNAME with a name of your choice to appear in your TOC. then run the script
   - Note that if on Windows, you will need to escape each backslash, i.e. use two (\\\\) instead of one wherever a slash appears in your PATH_TO_FILE.
   - If on Mac or Linux, a single forward slash (/) should suffice as a directory separator.
 
@@ -34,7 +34,7 @@ dirnameList = QgsProject.instance().fileName().split("/")[:-1]
 dirName = '\\'.join(dirnameList)+'\\'
 importPath = dirName + fileToImport
 print(importPath)
-layer = iface.addVectorLayer(importPath,'myLayer','ogr')
+layer = iface.addVectorLayer(importPath,'LAYERNAME','ogr')
 layer.renderer().symbol().setColor(QColor("darkGray"))
 layer.triggerRepaint()
 ```
