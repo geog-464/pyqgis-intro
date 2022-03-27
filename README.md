@@ -4,7 +4,7 @@ Both ESRI products (ArcMap, ArcGIS Pro) and QGIS accommodate out-of-the-box pyth
 
 As you will see below, in software suites which require specific packages to interface with programmatically (i.e. the qgis.core module in QGIS), it's more about knowing the package than about necessarily just knowing Python. Knowing Python, however, will allow you to more or less infinitely extend and customize functionality beyond the available functions of any specific package. QGIS doesn't only allow you to create processing scripts: it also allows you to programmatically modify the user interface (e.g. dynamically hiding or displaying specific elements of the UI), user interactivity (via click [Actions](https://docs.qgis.org/3.22/en/docs/training_manual/create_vector_data/actions.html)), and map styles (via QGIS-specific [Expressions](https://docs.qgis.org/3.22/en/docs/user_manual/expressions/expression.html)). All QGIS objects and methods are found in the [official reference documentation](https://qgis.org/pyqgis/master/) (within which you could orient yourself using the [PyQGIS Cookbook](https://docs.qgis.org/3.22/en/docs/pyqgis_developer_cookbook/index.html) or additional open courseware linked to at the end of this tutorial).
 
-## Importing data
+## 1. Importing data
 
 Go to the Montreal Open Data portal and download the [réseau routier](https://donnees.montreal.ca/ville-de-montreal/geobase#resource-g%C3%A3%C2%A9obase). Whether you download a .shp or .geojson is up to you. If the latter, however, make sure to save as a .geojson and make sure to project it in MTM 8 before continuing.
 - Launch QGIS and open the Plugins > Python Console.
@@ -72,7 +72,7 @@ As you can see, processing scripts that import, display, modify, manipulate and 
 QGIS and chained together in infinitely customizable ways. Scripts can help automate and optimize repetitive GIS
 workflows, and can also be used for creating custom standalone tools and [publishing plugins](https://autogis-site.readthedocs.io/en/2019/lessons/L7/pyqgis.html#creating-qgis-plugins).
 
-## Rendering Styles dynamically
+## 3. Rendering Styles dynamically
 
 In this tutorial we will apply some data-driven, dynamic styling to the road network to demonstrate how a
 single layer can be programmatically styled for viewing within QGIS without any geoprocessing.
