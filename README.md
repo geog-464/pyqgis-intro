@@ -39,7 +39,10 @@ layer.renderer().symbol().setColor(QColor("darkGray"))
 layer.triggerRepaint()
 ```
 
-Notice the colour change once imported, which uses a [predefined color value](https://doc.qt.io/qt-5/qcolor.html#predefined-colors)
+Notice the colour change once imported, which uses a [predefined color value](https://doc.qt.io/qt-5/qcolor.html#predefined-colors).
+
+- Replace your previous code snippet with the the template above and study it to make sure you understand what each line is doing.
+- Make the necessary modifications for the code to run properly on your machine and then run it.
 
 
 ## 2. Running geoprocessing scripts
