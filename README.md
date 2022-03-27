@@ -48,7 +48,7 @@ Notice the colour change once imported, which uses a [predefined color value](ht
 ## 2. Running geoprocessing scripts
 
 - Search for and open Extract/clip by extent in the Processing Toolbox.
-- Select your streets as the input layer and then use the Draw on canvas option to select an extent of your choice. Hit run.
+- Select your streets as the input layer and then use the *Draw on canvas* option to select an extent of your choice. Hit Run.
 - Review your output to make sure it makes sense, then remove it from your TOC.
 - The code that was used to run the tool should be available in the Processing > History window. The log of your clip tool should look something like below:
 
