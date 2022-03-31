@@ -92,7 +92,7 @@ What attributes are these modifications based on? How does line thickness reflec
 
 - Switch to the Labels icon > Single Labels, and **Edit…** the Size parameter.
   - `case when "CLASSE" = '8' then @value*1.5 when "CLASSE" = '7' then @value*1.25 when "CLASSE" = '6' then @value*1.1 when "CLASSE" = '5' then @value*1 end`
-- We can also pinpoint in what cases italics will apply: next to the I symbol > Edit…
+- We can also pinpoint in what cases italics will apply: next to the *I* symbol > Edit…
   - `"CLASSE" = '8'`
 - By then going to the Edit… window for *Value*, we can even filter what text is being used for our
 street labels:
